@@ -27,9 +27,12 @@
         const query = form.elements.query.value;
         fetch("/palette",{
         method: "POST",
-        body: {
+        headers:{
+            "Content-Type":"application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams({
             question: query
-            }
+            })
                 }).then((response)=>response.json())
                   .then(data => {
                        console.log(data)

@@ -36,7 +36,6 @@ class HealthCheck(MethodView):
         return response.choices[0].message.content
         return render_template("index.html")
 
-
 @blp.route("/palette/")
 class Palette(MethodView):
     @blp.arguments(schema=PaletteInputSchema, location='json')
