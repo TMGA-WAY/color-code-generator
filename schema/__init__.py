@@ -1,0 +1,1 @@
+from schema.palette_schema import PaletteInputSchema, PaletteOutputSchema
