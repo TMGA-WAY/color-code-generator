@@ -5,7 +5,8 @@ class PaletteInputSchema(Schema):
     """
     This class is used to take query parameter of color palette generation
     """
-    question: str = fields.Str(required=True)
+    question = fields.Str(required=True)
+
 
 
 class PaletteOutputSchema(Schema):
