@@ -56,5 +56,6 @@ To run in development mode in background-
 ```commandline
 http://localhost:4500
 ```
-![image info](./cheeryblossm.png)
+![image info](./example.png)
+![image info](./example2.png)
 
