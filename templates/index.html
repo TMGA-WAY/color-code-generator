@@ -14,7 +14,7 @@
         color: purple;
         }
         .container{
-        background-color: black;
+        background-color: #116466;
         width: 100%;
         height: 100vh;
         display: flex;
@@ -39,17 +39,43 @@
         margin-bottom: 2rem;
         color: white;
         text-shadow: 1px 1px black;
+        }
+        #form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #form input[type="text"]{
+        font-size:1rem;
+        outline: 0;
+        border: 2px solid #E6E6E6;
+        background-color: #D2FDFF;
+        padding: 10px;
+        }
+
+        .buttn {
+            background-color: #F78888;
+            padding: 10px;
+            font-size: 1rem;
+            color: #15202B;
+            border: 2px solid #E6E6E6;
+            transition: 0.2s opacity;
+        }
+        .buttn:hover{
+        opacity:0.6;
 
         }
     </style>
 </head>
 <body>
-<h1> Welcome to this page</h1>
+<!--<h1> Welcome to this page</h1>-->
 <div class="container"></div>
 
 <form id="form">
     <input type="text" name="query" id="input" onchange="getVal()">
-    <button>Submit</button>
+    <button class="buttn">Submit</button>
 </form>
 
 <script>
