@@ -17,7 +17,7 @@ You can execute this project either in Docker or local python env
 * set up conda/virtual env- **Python 3.12.0**
 * clone the project-
 ```commandline
-    github.com
+    git clone https://github.com/TMGA-WAY/color-code-generator.git
 ```
 
 * Install all requirements
