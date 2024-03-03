@@ -32,6 +32,8 @@ class HealthCheck(MethodView):
                 }
             ],
             model="gpt-3.5-turbo",
+            temperature=0.4,
+            frequency_penalty=0
         )
         return response.choices[0].message.content
         return render_template("index.html")
